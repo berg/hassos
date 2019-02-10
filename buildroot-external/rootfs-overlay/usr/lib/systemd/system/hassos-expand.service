@@ -10,6 +10,8 @@ After=dev-disk-by\x2dlabel-hassos\x2ddata.device
 [Service]
 Type=oneshot
 ExecStart=/usr/libexec/hassos-expand
+StandardOutput=kmsg+console
+StandardError=kmsg+console
 RemainAfterExit=true
 
 [Install]
